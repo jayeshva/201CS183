@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const port = 5000;
+const port = 5003;
 const axios = require('axios');
 const cors = require('cors');
 const path = require("path")
@@ -14,7 +14,7 @@ let accessToken = "";
 let tokenExpiration = 0; 
 
 const apiUrl = "http://20.244.56.144/train/auth";
-const refreshTokenInterval = 600000; // Interval in milliseconds
+const refreshTokenInterval = 100000; // Interval in milliseconds
 
 // Function to refresh the token by making a POST request
 async function refreshToken() {
