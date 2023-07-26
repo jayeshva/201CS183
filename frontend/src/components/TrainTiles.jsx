@@ -7,8 +7,8 @@ const TrainTiles = (props) => {
     const history = useHistory();
 
     const handleOpenTraindetails = () => {
-      history.push(`/train/${trainNumber}`);
-      window.location.reload()
+      history.push(`/${trainNumber}`);
+      window.location.reload();
     };
   return (
     <div className='trainContainer'>

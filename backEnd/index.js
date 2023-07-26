@@ -67,7 +67,7 @@ app.get('/train', checkTokenExpiration, (req, res) => {
       })
       .catch(error => {
         console.error('Error fetching data:', error.message);
-        res.status(500).send('Error fetching data from the external API.');
+        res.status(500).send('Error fetching data from the API.');
       });
   });
 
